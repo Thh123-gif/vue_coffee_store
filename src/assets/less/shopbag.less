@@ -1,0 +1,112 @@
+.shopbag {
+    .top-nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    background-color: #eee;
+    // height: 100vh;
+    /deep/ .van-nav-bar .van-icon , /deep/ .van-nav-bar__text{
+        color: #854C21;
+    }
+    /deep/ .van-submit-bar__bar {
+        padding: 0 5px;
+    }
+    .van-cell {
+        margin-top: 10px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .products-list {
+        margin-top: 35px;
+        // height: 100vh;
+        margin-bottom: 100px;
+        overflow-y: auto;
+        .products {
+            display: flex;
+            align-items: center;
+            .check {
+                width: 20px;
+                margin-right: 10px;
+                margin-left: 5px;
+            }
+            .slide-box {
+                flex: 1;
+            }
+        }
+        .default-box {
+            display: flex;
+            /deep/ .van-stepper--round .van-stepper__plus {
+                background-color: #854C21;
+            }
+            /deep/ .van-stepper--round .van-stepper__minus {
+                border: 1px solid #854C21;
+                color: #854C21;
+            }
+            .img-box {
+                width: 60px;
+                height: 60px;
+                background-color: rosybrown;
+                margin-top: 20px;
+            }
+            .content {
+                flex: 1;
+                padding: 10px;
+                box-sizing: border-box;
+                .c-title{
+                    margin: 0;
+                    margin-top: 5px;
+                    .t-title {
+                        font-size: 14px;
+                        margin-right: 10px;
+                    }
+                    .s-msg {
+                        color: #777;
+                    }
+                }
+                .enname{
+                    font-size: 13px;
+                    margin: 0;
+                    // padding: 3px 0 5px 0;
+                    
+                    box-sizing: border-box;
+                    color: #999;
+                }
+                .counts {
+                    display: flex;
+                    .price {
+                        font-size: 14px;
+                    }
+                    .num-select {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+        .delete-button {
+            height: 100%;
+        }
+    }
+
+    .sub-box {
+        margin-bottom: 50px;
+        /deep/ .van-submit-bar__price {
+            color: #854C21;
+        }
+        /deep/ .van-submit-bar__button--danger {
+            background: #cf7836;
+        }
+        .check-box {
+            margin-right: auto;
+        }
+    }
+    .empty {
+        margin-top: 46px;
+    }
+    .empty-show {
+        padding-top: 10px;
+        background-color: #fff;
+        margin-bottom: 100px;
+    }
+}

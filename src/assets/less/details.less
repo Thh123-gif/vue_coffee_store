@@ -1,0 +1,91 @@
+.details-box {
+    background-color: #eee;
+    margin-bottom: 60px;
+    /deep/ .van-nav-bar .van-icon , .van-nav-bar__text {
+        color: #854C21;
+        // color: #b37647;
+    }
+    .top-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .show-img {
+        width: 100%;
+        margin-top: 46px;
+    }
+    .show-msg {
+        width: 100%;
+        box-sizing: border-box;
+        .title {
+            padding: 0 10px;
+            margin-bottom: 10px;
+            height: 100px;
+            background-color: #fff;
+            h3 {
+                padding-top: 10px;
+                margin-bottom: 2px;
+            }
+            p {
+                margin: 0;
+                color: #999;
+            }
+            h2 {
+                color: #854C21;
+            }
+        }
+        .select {
+            padding: 0 10px;
+            box-sizing: border-box;
+            background-color: #fff;
+            h3 {
+                padding-top: 10px;
+            }
+            .s-title {
+                width: 50px;
+                display: inline-block;
+            }
+            .templete {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                ul {
+                    overflow: hidden;
+                    li {
+                        float: left;
+                        margin: 0 10px;
+                        padding: 3px 20px;
+                        border-radius: 10px;
+                        color: #555;
+                        background-color: rgba(0, 0, 0, .2);
+                        &.active {
+                            color: #fff;
+                            background-color: #854C21;
+                        }
+                    }
+                }
+            }
+            .select-num {
+                height: 60px;
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                display: flex;
+                align-items: center;
+                /deep/ .van-stepper--round .van-stepper__plus {
+                    background-color: #854C21;
+                }
+                /deep/ .van-stepper--round .van-stepper__minus {
+                    border: 1px solid #854C21;
+                    color: #854C21;
+                }
+                .p-num {
+                    margin-left: auto;
+                }
+            }
+            .mess {
+                color: #999;
+            }
+        }
+    }
+}
